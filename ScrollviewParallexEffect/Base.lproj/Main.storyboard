@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ScrollviewParallexEffect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8W-LD-a2k">
+                                <rect key="frame" x="0.0" y="170" width="375" height="497"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ySC-u1-qsl">
+                                        <rect key="frame" x="0.0" y="0.0" width="1125" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Z8V-Hc-fPI"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="1000" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Agk-vE-cvk" customClass="ListViewXIB" customModule="ScrollviewParallexEffect" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="447"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="ListViewXIB"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view tag="1001" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Xfr-fN-Rh4" userLabel="List ViewXIB1" customClass="ListViewXIB" customModule="ScrollviewParallexEffect" customModuleProvider="target">
+                                        <rect key="frame" x="375" y="50" width="375" height="447"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="ListViewXIB"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view tag="1002" contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gDF-JI-35B" userLabel="List ViewXIB1" customClass="ListViewXIB" customModule="ScrollviewParallexEffect" customModuleProvider="target">
+                                        <rect key="frame" x="750" y="50" width="375" height="447"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="ListViewXIB"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gDF-JI-35B" secondAttribute="trailing" id="4FV-pf-xKF"/>
+                                    <constraint firstAttribute="bottom" secondItem="Agk-vE-cvk" secondAttribute="bottom" id="4lG-ZW-u40"/>
+                                    <constraint firstItem="gDF-JI-35B" firstAttribute="leading" secondItem="Xfr-fN-Rh4" secondAttribute="trailing" id="7hs-yM-TId"/>
+                                    <constraint firstItem="Agk-vE-cvk" firstAttribute="leading" secondItem="D8W-LD-a2k" secondAttribute="leading" id="7jK-3C-UsW"/>
+                                    <constraint firstItem="ySC-u1-qsl" firstAttribute="leading" secondItem="D8W-LD-a2k" secondAttribute="leading" id="7ve-RQ-j8f"/>
+                                    <constraint firstItem="Xfr-fN-Rh4" firstAttribute="leading" secondItem="Agk-vE-cvk" secondAttribute="trailing" id="Dbj-R5-PhF"/>
+                                    <constraint firstItem="Xfr-fN-Rh4" firstAttribute="top" secondItem="Agk-vE-cvk" secondAttribute="top" id="Qy7-9p-uCD"/>
+                                    <constraint firstItem="gDF-JI-35B" firstAttribute="width" secondItem="Agk-vE-cvk" secondAttribute="width" id="SCb-iO-QtP"/>
+                                    <constraint firstItem="ySC-u1-qsl" firstAttribute="top" secondItem="D8W-LD-a2k" secondAttribute="top" id="a8r-h0-5mz"/>
+                                    <constraint firstItem="Xfr-fN-Rh4" firstAttribute="leading" secondItem="Agk-vE-cvk" secondAttribute="trailing" id="ckK-Lk-wuV"/>
+                                    <constraint firstItem="Xfr-fN-Rh4" firstAttribute="height" secondItem="D8W-LD-a2k" secondAttribute="height" constant="-50" id="cla-d1-AwR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ySC-u1-qsl" secondAttribute="trailing" id="f1e-ch-bN5"/>
+                                    <constraint firstItem="Agk-vE-cvk" firstAttribute="width" secondItem="D8W-LD-a2k" secondAttribute="width" id="f4d-fV-JeA"/>
+                                    <constraint firstItem="Xfr-fN-Rh4" firstAttribute="width" secondItem="Agk-vE-cvk" secondAttribute="width" id="fpg-Gy-NcM"/>
+                                    <constraint firstItem="gDF-JI-35B" firstAttribute="height" secondItem="Agk-vE-cvk" secondAttribute="height" id="kWe-LP-lCh"/>
+                                    <constraint firstItem="gDF-JI-35B" firstAttribute="bottom" secondItem="Agk-vE-cvk" secondAttribute="bottom" id="lR3-lu-HNx"/>
+                                    <constraint firstItem="Agk-vE-cvk" firstAttribute="top" secondItem="ySC-u1-qsl" secondAttribute="bottom" id="n9i-Sq-aOC"/>
+                                    <constraint firstItem="Xfr-fN-Rh4" firstAttribute="bottom" secondItem="Agk-vE-cvk" secondAttribute="bottom" id="rCX-9F-yLY"/>
+                                    <constraint firstItem="gDF-JI-35B" firstAttribute="top" secondItem="Agk-vE-cvk" secondAttribute="top" id="rrA-Ha-uUH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8vk-Zt-t3b"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D8W-LD-a2k" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="4ge-gE-kJ4"/>
+                            <constraint firstItem="D8W-LD-a2k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="6NN-OF-A9n"/>
+                            <constraint firstItem="D8W-LD-a2k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="RIe-0m-6MY"/>
+                            <constraint firstItem="D8W-LD-a2k" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uQq-6m-9Ut"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="listView1" destination="Agk-vE-cvk" id="Ujf-Vt-y6e"/>
+                        <outlet property="listView2" destination="Xfr-fN-Rh4" id="stY-NT-l1v"/>
+                        <outlet property="listView3" destination="gDF-JI-35B" id="xW6-jm-WOT"/>
+                        <outlet property="scrollView" destination="D8W-LD-a2k" id="BIE-lK-Kbf"/>
+                        <outlet property="topView" destination="ySC-u1-qsl" id="qmh-y2-kSA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+</document>
